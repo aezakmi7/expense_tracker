@@ -25,6 +25,11 @@ class ExpensesList extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: Theme.of(context).colorScheme.error.withOpacity(0.75),
           ),
+          alignment: Alignment.centerRight,
+          padding: const EdgeInsets.all(8),
+          child: const Icon(
+            Icons.delete,
+          ),
         ),
         child: ExpenseItem(expenses[index]),
         onDismissed: (direction) {
